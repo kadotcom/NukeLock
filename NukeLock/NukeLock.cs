@@ -9,10 +9,10 @@ namespace NukeLock
 {
     public class NukeLock : Plugin<Config>
     {
-        public override string Author => "Marco15453";
+        public override string Author => "Marco15453 | Updated by: KadotCom";
         public override string Name => "NukeLock";
-        public override Version Version => new Version(1, 11, 0);
-        public override Version RequiredExiledVersion => new Version(6, 0, 0);
+        public override Version Version => new Version(1, 12, 0);
+        public override Version RequiredExiledVersion => new Version(8, 0, 0);
 
         public CoroutineHandle nukeCoroutine;
         public CoroutineHandle radiationCoroutine;

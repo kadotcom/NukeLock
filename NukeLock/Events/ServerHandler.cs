@@ -33,8 +33,8 @@ namespace NukeLock.Events
 
             if (plugin.Config.WarheadColor.Red >= 0 || plugin.Config.WarheadColor.Blue >= 0 || plugin.Config.WarheadColor.Green >= 0)
                 foreach (Room room in Room.List)
-                    if (room != null && room.FlickerableLightController != null)
-                        room.FlickerableLightController.WarheadLightColor = new UnityEngine.Color(plugin.Config.WarheadColor.Red / 255, plugin.Config.WarheadColor.Green / 255, plugin.Config.WarheadColor.Blue / 255);
+                    if (room != null && room.RoomLightController != null)
+                        room.RoomLightController.NetworkOverrideColor = new UnityEngine.Color(plugin.Config.WarheadColor.Red / 255, plugin.Config.WarheadColor.Green / 255, plugin.Config.WarheadColor.Blue / 255);
         }
 
         public void OnRespawningTeam(RespawningTeamEventArgs ev)
